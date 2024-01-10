@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Courier New", Courier, monospace;
+    background-color: black;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: black;
+}
+
+.calculator {
+    background: teal;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    width: 500px; 
+    height: auto; 
+    padding: 20px; 
+}
+
+.calculator form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.calculator form input {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 70px; /* Adjusted width for square shape */
+    height: 70px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 10px;
+    padding: 10px; /* Adjusted padding */
+    margin: 19px;
+}
+
+.calculator form input.operator,
+.calculator form input.equal,
+.calculator form input.double,
+.calculator form input.triple {
+    background-color: #2196f3;
+    color: #fff;
+    padding: 5px;
+    margin: 16px;
+}
+
+.calculator form input:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.calculator form .display {
+    text-align: right;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    width: 100%; /* Set to 100% for full width */
+    max-width: 400px; /* Adjusted max-width for a balanced look */
+}
+
+.button-grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+form .display{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+}
+
+form .display input{
+    text-align: right;
+    flex: 1;
+    font-size: 45px;
+    box-shadow: none;
+    text-decoration: none;
+    transition: none;
+}
+
+form input.equal{
+    width: 175px;
+}
